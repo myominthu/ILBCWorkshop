@@ -4,8 +4,10 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Professional Development Workshop 2026 – ILBC</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap');
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
   --dark:#0A0E1A;
@@ -21,7 +23,7 @@
   --border:rgba(0,0,0,0.09);
 }
 html{scroll-behavior:smooth;}
-body{font-family:'Arial','Helvetica Neue',Helvetica,sans-serif;background:var(--white);color:var(--text);line-height:1.65;}
+body{font-family:'Inter',Arial,sans-serif;background:var(--white);color:var(--text);line-height:1.65;font-size:17px;}
 
 /* ── NAV ── */
 .nav{
@@ -31,20 +33,20 @@ body{font-family:'Arial','Helvetica Neue',Helvetica,sans-serif;background:var(--
   border-bottom:1px solid rgba(74,158,224,0.2);
 }
 .nav-inner{
-  max-width:1100px;margin:0 auto;
-  padding:0 40px;
+  max-width:1200px;margin:0 auto;
+  padding:0 48px;
   display:flex;align-items:center;gap:24px;
-  height:68px;
+  height:72px;
 }
-.nav-logo{height:48px;width:auto;filter:drop-shadow(0 1px 6px rgba(0,0,0,0.5));}
-.nav-brand{flex:1;display:flex;flex-direction:column;gap:1px;}
-.nav-brand strong{font-family:'Arial Narrow','Arial','Helvetica Neue',Helvetica,sans-serif;font-size:1.15rem;font-weight:700;color:var(--white);letter-spacing:0.04em;}
-.nav-brand span{font-size:12px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);}
+.nav-logo{height:52px;width:auto;filter:drop-shadow(0 1px 6px rgba(0,0,0,0.5));}
+.nav-brand{flex:1;display:flex;flex-direction:column;gap:2px;}
+.nav-brand strong{font-family:'Oswald',sans-serif;font-size:1.2rem;font-weight:600;color:var(--white);letter-spacing:0.06em;}
+.nav-brand span{font-size:12px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);}
 .nav-links{display:flex;gap:6px;align-items:center;}
 .nav-links a{
-  font-size:15px;font-weight:500;letter-spacing:0.05em;
+  font-size:15px;font-weight:500;letter-spacing:0.04em;
   color:rgba(255,255,255,0.65);text-decoration:none;
-  padding:6px 14px;border-radius:6px;
+  padding:7px 16px;border-radius:6px;
   transition:color 0.2s,background 0.2s;
 }
 .nav-links a:hover{color:var(--white);background:rgba(255,255,255,0.08);}
@@ -52,23 +54,23 @@ body{font-family:'Arial','Helvetica Neue',Helvetica,sans-serif;background:var(--
 
 /* ── HERO ── */
 .hero{
-  min-height:92vh;
+  min-height:94vh;
   display:flex;flex-direction:column;justify-content:center;
   position:relative;overflow:hidden;
-  padding:100px 40px 80px;
+  padding:110px 48px 90px;
 }
 .hero-img{
   position:absolute;inset:0;
-  background-image:url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1800&auto=format&fit=crop&q=80');
+  background-image:url('Workshop.png');
   background-size:cover;
-  background-position:center 30%;
+  background-position:center 35%;
   z-index:0;
 }
 .hero-bg{
   position:absolute;inset:0;z-index:1;
   background:
-    linear-gradient(105deg, rgba(8,12,24,0.92) 0%, rgba(8,12,24,0.75) 50%, rgba(8,12,24,0.55) 100%),
-    linear-gradient(to top, rgba(8,12,24,0.95) 0%, transparent 40%);
+    linear-gradient(110deg, rgba(8,12,24,0.93) 0%, rgba(8,12,24,0.78) 55%, rgba(8,12,24,0.50) 100%),
+    linear-gradient(to top, rgba(8,12,24,0.97) 0%, transparent 45%);
 }
 .hero-grid{
   position:absolute;inset:0;z-index:2;
@@ -77,98 +79,99 @@ body{font-family:'Arial','Helvetica Neue',Helvetica,sans-serif;background:var(--
     linear-gradient(90deg, rgba(74,158,224,0.06) 1px, transparent 1px);
   background-size:80px 80px;
 }
-.hero-inner{position:relative;z-index:3;max-width:1100px;margin:0 auto;width:100%;}
+.hero-inner{position:relative;z-index:3;max-width:1200px;margin:0 auto;width:100%;}
 .hero-eyebrow{
-  display:inline-flex;align-items:center;gap:10px;
-  font-family:'Arial Narrow','Arial','Helvetica Neue',Helvetica,sans-serif;
-  font-size:15px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
-  color:var(--accent);margin-bottom:28px;
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:'Oswald',sans-serif;
+  font-size:16px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:30px;
 }
-.hero-eyebrow::before{content:'';display:block;width:32px;height:2px;background:var(--accent);}
+.hero-eyebrow::before{content:'';display:block;width:36px;height:2px;background:var(--accent);}
 .hero h1{
-  font-family:'Impact','Arial Narrow','Arial Black','Helvetica Neue',sans-serif;
-  font-size:clamp(3rem,7vw,6rem);
-  font-weight:800;line-height:0.98;
+  font-family:'Oswald',sans-serif;
+  font-size:clamp(3.4rem,8vw,7rem);
+  font-weight:700;line-height:0.96;
   color:var(--white);
   text-transform:uppercase;
-  letter-spacing:-0.01em;
-  margin-bottom:8px;
+  letter-spacing:0.01em;
+  margin-bottom:10px;
 }
 .hero h1 .line2{color:var(--accent2);}
 .hero-subtitle{
-  font-size:clamp(1.1rem,2vw,1.5rem);
-  font-weight:300;color:rgba(255,255,255,0.55);
-  max-width:600px;margin:20px 0 44px;
-  line-height:1.5;
+  font-family:'Inter',sans-serif;
+  font-size:clamp(1.1rem,2.2vw,1.55rem);
+  font-weight:400;color:rgba(255,255,255,0.62);
+  max-width:640px;margin:22px 0 48px;
+  line-height:1.55;
 }
-.hero-chips{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px;}
+.hero-chips{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:52px;}
 .chip{
-  display:flex;align-items:center;gap:10px;
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.12);
-  padding:14px 22px;border-radius:8px;
+  display:flex;align-items:center;gap:12px;
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.14);
+  padding:14px 24px;border-radius:10px;
   color:var(--white);font-size:16px;
 }
-.chip-icon{font-size:18px;opacity:0.7;}
-.chip-val{font-weight:600;display:block;font-size:16px;}
-.chip-sub{display:block;font-size:13px;color:rgba(255,255,255,0.45);margin-top:1px;}
-.hero-topics{display:flex;flex-wrap:wrap;gap:8px;}
+.chip-icon{font-size:22px;opacity:0.75;}
+.chip-val{font-weight:700;display:block;font-size:17px;}
+.chip-sub{display:block;font-size:13px;color:rgba(255,255,255,0.48);margin-top:2px;}
+.hero-topics{display:flex;flex-wrap:wrap;gap:10px;}
 .topic-pill{
-  font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;
-  padding:7px 18px;border-radius:100px;
+  font-size:13.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;
+  padding:8px 20px;border-radius:100px;
   background:rgba(74,158,224,0.15);
   border:1px solid rgba(74,158,224,0.3);
   color:var(--accent2);
 }
 
-/* ── ACCENT LINE ── */
+/* ── ACCENT BAR ── */
 .accent-bar{height:4px;background:linear-gradient(90deg,var(--accent) 0%,var(--accent2) 40%,transparent 100%);}
 
 /* ── SECTION SHARED ── */
-.sec{padding:80px 40px;}
-.sec-inner{max-width:1100px;margin:0 auto;}
+.sec{padding:88px 48px;}
+.sec-inner{max-width:1200px;margin:0 auto;}
 .sec-eyebrow{
-  font-family:'Arial Narrow','Arial','Helvetica Neue',Helvetica,sans-serif;
-  font-size:14px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;
-  color:var(--accent);margin-bottom:10px;
-  display:flex;align-items:center;gap:10px;
+  font-family:'Oswald',sans-serif;
+  font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:12px;
+  display:flex;align-items:center;gap:12px;
 }
-.sec-eyebrow::after{content:'';flex:0 0 32px;height:2px;background:var(--accent);}
+.sec-eyebrow::after{content:'';flex:0 0 36px;height:2px;background:var(--accent);}
 .sec-title{
-  font-family:'Arial Narrow','Arial','Helvetica Neue',Helvetica,sans-serif;
-  font-size:clamp(2rem,4vw,3rem);font-weight:700;
-  text-transform:uppercase;letter-spacing:0.02em;
-  color:var(--dark2);margin-bottom:40px;
+  font-family:'Oswald',sans-serif;
+  font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:700;
+  text-transform:uppercase;letter-spacing:0.03em;
+  color:var(--dark2);margin-bottom:44px;
   line-height:1.05;
 }
 
 /* ── OBJECTIVES ── */
 .obj-sec{background:var(--off);}
-.obj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+.obj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;}
 .obj-card{
   background:var(--white);
   border:1px solid var(--border);
-  border-top:3px solid var(--accent);
-  border-radius:0 0 10px 10px;
-  padding:28px 24px;
+  border-top:4px solid var(--accent);
+  border-radius:0 0 12px 12px;
+  padding:30px 26px;
   transition:transform 0.18s,box-shadow 0.18s;
 }
 .obj-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(74,158,224,0.12);}
 .obj-num{
-  font-family:'Arial Narrow','Arial','Helvetica Neue',Helvetica,sans-serif;
-  font-size:2.8rem;font-weight:800;
-  color:rgba(74,158,224,0.15);
-  line-height:1;margin-bottom:10px;
+  font-family:'Oswald',sans-serif;
+  font-size:2.8rem;font-weight:700;
+  color:rgba(74,158,224,0.18);
+  line-height:1;margin-bottom:12px;
 }
-.obj-card p{font-size:16px;color:var(--muted);line-height:1.6;}
+.obj-card p{font-size:17px;color:var(--muted);line-height:1.65;}
 
 /* ── AGENDA ── */
 .agenda-sec{background:var(--white);}
-.day-tabs{display:flex;gap:0;margin-bottom:36px;border-bottom:2px solid var(--off);}
+.day-tabs{display:flex;gap:0;margin-bottom:38px;border-bottom:2px solid var(--off);}
 .day-tab{
-  padding:14px 28px;
-  font-family:'Arial Narrow','Arial','Helvetica Neue',Helvetica,sans-serif;
-  font-size:17px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;
+  padding:16px 32px;
+  font-family:'Oswald',sans-serif;
+  font-size:17px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;
   color:var(--muted);background:none;border:none;cursor:pointer;
   border-bottom:3px solid transparent;margin-bottom:-2px;
   transition:color 0.18s,border-color 0.18s;
@@ -177,89 +180,152 @@ body{font-family:'Arial','Helvetica Neue',Helvetica,sans-serif;background:var(--
 .day-tab.active{color:var(--accent);border-bottom-color:var(--accent);}
 .day-panel{display:none;}
 .day-panel.active{display:block;}
-
 .day-header{
   background:var(--dark);color:var(--white);
-  padding:24px 32px;border-radius:10px 10px 0 0;
-  display:flex;align-items:center;gap:20px;
+  padding:26px 36px;border-radius:12px 12px 0 0;
+  display:flex;align-items:center;gap:24px;
 }
 .day-num{
-  font-family:'Arial Narrow','Arial','Helvetica Neue',Helvetica,sans-serif;
-  font-size:3.5rem;font-weight:800;
-  color:var(--accent);line-height:1;
-  opacity:0.9;
+  font-family:'Oswald',sans-serif;
+  font-size:4rem;font-weight:700;
+  color:var(--accent);line-height:1;opacity:0.9;
 }
-.day-info h3{font-family:'Arial Narrow','Arial','Helvetica Neue',Helvetica,sans-serif;font-size:1.5rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;}
-.day-info p{font-size:14px;color:rgba(255,255,255,0.5);margin-top:4px;}
-
-.ag-table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--border);border-top:none;border-radius:0 0 10px 10px;overflow:hidden;}
+.day-info h3{font-family:'Oswald',sans-serif;font-size:1.55rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;}
+.day-info p{font-size:15px;color:rgba(255,255,255,0.52);margin-top:5px;}
+.ag-table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--border);border-top:none;border-radius:0 0 12px 12px;overflow:hidden;}
 .ag-table thead{background:#EDF2F7;}
-.ag-table th{text-align:left;padding:14px 22px;font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);}
-.ag-table td{padding:18px 22px;font-size:16px;vertical-align:top;border-top:1px solid var(--border);}
+.ag-table th{text-align:left;padding:15px 24px;font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);}
+.ag-table td{padding:20px 24px;font-size:17px;vertical-align:top;border-top:1px solid var(--border);}
 .ag-table tr:hover td{background:#FAFBFC;}
-.ag-table tr.brk td{background:#FFFDF5;font-style:italic;color:var(--muted);}
-.ag-table tr.brk td:first-child{font-style:normal;font-weight:600;color:var(--gold);}
+.ag-table tr.brk td{background:#FFFDF5;font-style:italic;color:var(--muted);font-size:16px;}
+.ag-table tr.brk td:first-child{font-style:normal;font-weight:700;color:var(--gold);}
 .ag-table tr.keynote td{background:rgba(74,158,224,0.04);}
-.time-col{white-space:nowrap;color:var(--navy);font-weight:600;font-size:15px;min-width:160px;}
-.session-col{font-weight:500;}
-.session-col strong{color:var(--dark2);}
+.time-col{white-space:nowrap;color:var(--navy);font-weight:700;font-size:15px;min-width:170px;}
+.session-col{font-weight:500;font-size:17px;}
+.session-col strong{color:var(--dark2);font-weight:700;}
 .tag{
   display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;
-  padding:4px 12px;border-radius:100px;margin-top:6px;
+  padding:4px 13px;border-radius:100px;margin-top:7px;
   background:rgba(74,158,224,0.12);color:var(--accent);border:1px solid rgba(74,158,224,0.25);
 }
 .tag.policy{background:rgba(212,168,67,0.12);color:#A07820;border-color:rgba(212,168,67,0.3);}
-.presenter-col{font-size:14px;color:var(--muted);}
+.presenter-col{font-size:15px;color:var(--muted);}
 .pill{
   display:inline-block;background:#EDF2F7;color:var(--navy);
-  padding:4px 12px;border-radius:100px;font-size:13.5px;
-  margin:3px 3px 3px 0;
+  padding:4px 13px;border-radius:100px;font-size:14px;
+  margin:3px 3px 3px 0;font-weight:500;
+}
+
+/* ── POLICY ── */
+.policy-sec{background:var(--off);}
+.policy-list{
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:16px;
+  margin-bottom:44px;
+}
+.policy-list li{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-left:5px solid var(--accent);
+  border-radius:0 10px 10px 0;
+  padding:16px 20px;
+  font-size:17px;
+  line-height:1.55;
+  color:var(--text);
+}
+.pol-num{font-size:12px;font-weight:700;letter-spacing:0.12em;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:5px;}
+.pol-presenter{font-size:14px;color:var(--muted);margin-top:5px;display:block;}
+.policy-note{
+  background:rgba(74,158,224,0.08);
+  border:1px solid rgba(74,158,224,0.2);
+  border-radius:10px;
+  padding:18px 26px;
+  font-size:17px;
+  color:var(--navy);
+  margin-bottom:38px;
+  font-weight:500;
+}
+.policy-note strong{color:var(--accent);}
+
+/* ── FORMAT ── */
+.format-sec{background:var(--dark2);}
+.format-sec .sec-eyebrow{color:var(--accent2);}
+.format-sec .sec-eyebrow::after{background:var(--accent2);}
+.format-sec .sec-title{color:var(--white);}
+.format-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;}
+.format-card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.10);
+  border-radius:12px;padding:32px;
+}
+.format-card h4{
+  font-family:'Oswald',sans-serif;
+  font-size:1.25rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:0.06em;
+  color:var(--accent2);margin-bottom:22px;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  padding-bottom:14px;
+}
+.format-card ol{padding-left:0;list-style:none;display:flex;flex-direction:column;gap:14px;}
+.format-card li{
+  display:flex;gap:14px;align-items:flex-start;
+  font-size:16px;color:rgba(255,255,255,0.78);line-height:1.6;
+}
+.li-num{
+  font-size:12px;font-weight:700;
+  background:rgba(74,158,224,0.22);color:var(--accent2);
+  min-width:26px;height:26px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:2px;
 }
 
 /* ── CERT ── */
-.cert-sec{background:var(--dark);padding:60px 40px;}
-.cert-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:48px;flex-wrap:wrap;}
+.cert-sec{background:var(--dark);padding:68px 48px;}
+.cert-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:52px;flex-wrap:wrap;}
 .cert-icon-wrap{
-  width:80px;height:80px;
-  background:rgba(74,158,224,0.15);border-radius:16px;
+  width:88px;height:88px;
+  background:rgba(74,158,224,0.15);border-radius:18px;
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
 }
 .cert-icon-wrap svg{color:var(--accent2);}
 .cert-text{flex:1;}
 .cert-text h3{
-  font-family:'Arial Narrow','Arial','Helvetica Neue',Helvetica,sans-serif;
-  font-size:2rem;font-weight:700;text-transform:uppercase;
+  font-family:'Oswald',sans-serif;
+  font-size:2.1rem;font-weight:700;text-transform:uppercase;
   letter-spacing:0.04em;color:var(--white);margin-bottom:10px;
 }
-.cert-text p{font-size:16px;color:rgba(255,255,255,0.5);max-width:500px;line-height:1.6;}
+.cert-text p{font-size:17px;color:rgba(255,255,255,0.52);max-width:520px;line-height:1.65;}
 .cert-badge{
-  font-family:'Arial Narrow','Arial','Helvetica Neue',Helvetica,sans-serif;
-  font-size:15px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
-  padding:14px 32px;border:2px solid var(--accent);color:var(--accent);
-  border-radius:6px;white-space:nowrap;
+  font-family:'Oswald',sans-serif;
+  font-size:16px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;
+  padding:16px 36px;border:2px solid var(--accent);color:var(--accent);
+  border-radius:8px;white-space:nowrap;
 }
 
 /* ── FOOTER ── */
 footer{
   background:#060912;
-  padding:32px 40px;
+  padding:36px 48px;
   display:flex;align-items:center;justify-content:space-between;
   gap:20px;flex-wrap:wrap;
   border-top:1px solid rgba(74,158,224,0.15);
 }
-.footer-brand{display:flex;align-items:center;gap:14px;}
-.footer-logo{height:40px;filter:drop-shadow(0 1px 4px rgba(0,0,0,0.5));}
-.footer-name{font-family:'Arial Narrow','Arial','Helvetica Neue',Helvetica,sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:0.06em;color:rgba(255,255,255,0.7);}
-footer p{font-size:14px;color:rgba(255,255,255,0.3);}
+.footer-brand{display:flex;align-items:center;gap:16px;}
+.footer-logo{height:44px;filter:drop-shadow(0 1px 4px rgba(0,0,0,0.5));}
+.footer-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:1.15rem;letter-spacing:0.06em;color:rgba(255,255,255,0.72);}
+footer p{font-size:15px;color:rgba(255,255,255,0.32);}
 
-@media(max-width:640px){
+@media(max-width:768px){
   .nav-links{display:none;}
-  .hero{padding:80px 20px 60px;}
-  .sec{padding:60px 20px;}
-  .cert-sec{padding:50px 20px;}
-  footer{padding:24px 20px;flex-direction:column;text-align:center;}
+  .hero{padding:90px 24px 70px;}
+  .sec{padding:64px 24px;}
+  .cert-sec{padding:52px 24px;}
+  footer{padding:28px 24px;flex-direction:column;text-align:center;}
+  .format-grid{grid-template-columns:1fr;}
   .ag-table th:nth-child(3),.ag-table td:nth-child(3){display:none;}
-  .day-tab{padding:12px 16px;font-size:13px;}
+  .day-tab{padding:12px 18px;font-size:15px;}
 }
 </style>
 </head>
@@ -274,8 +340,10 @@ footer p{font-size:14px;color:rgba(255,255,255,0.3);}
       <span>Progress Through Education</span>
     </div>
     <div class="nav-links">
-      <a href="#objectives" class="active">Objectives</a>
+      <a href="#objectives">Objectives</a>
       <a href="#agenda">Agenda</a>
+      <a href="#policy">Policy</a>
+      <a href="#format">Format</a>
       <a href="#certificate">Certificate</a>
     </div>
   </div>
@@ -289,7 +357,7 @@ footer p{font-size:14px;color:rgba(255,255,255,0.3);}
   <div class="hero-inner">
     <div class="hero-eyebrow">ILBC Annual Workshop · 2026</div>
     <h1>Professional<br/><span class="line2">Development</span><br/>Workshop</h1>
-    <p class="hero-subtitle">Education Theory · AI Application in Education · Professional Etiquette &amp; School Policy Awareness</p>
+    <p class="hero-subtitle">Education Theory &nbsp;·&nbsp; AI Application in Education &nbsp;·&nbsp; School Policy Awareness &amp; Professional Etiquette</p>
     <div class="hero-chips">
       <div class="chip">
         <span class="chip-icon">📅</span>
@@ -330,26 +398,11 @@ footer p{font-size:14px;color:rgba(255,255,255,0.3);}
     <div class="sec-eyebrow">Why We Gather</div>
     <h2 class="sec-title">Workshop Objectives</h2>
     <div class="obj-grid">
-      <div class="obj-card">
-        <div class="obj-num">01</div>
-        <p>Enhance teachers' understanding of curriculum and implementation, education theory and professional practices.</p>
-      </div>
-      <div class="obj-card">
-        <div class="obj-num">02</div>
-        <p>Introduce practical AI applications for classroom teaching and learning across all subjects.</p>
-      </div>
-      <div class="obj-card">
-        <div class="obj-num">03</div>
-        <p>Demonstrate AI tools and strategies across different academic subjects through live classroom demonstrations.</p>
-      </div>
-      <div class="obj-card">
-        <div class="obj-num">04</div>
-        <p>Improve awareness of school policies and professional responsibilities including health and safety.</p>
-      </div>
-      <div class="obj-card">
-        <div class="obj-num">05</div>
-        <p>Strengthen professional etiquette and communication skills in the workplace for all educators.</p>
-      </div>
+      <div class="obj-card"><div class="obj-num">01</div><p>Enhance teachers' understanding of curriculum and implementation, education theory and professional practices.</p></div>
+      <div class="obj-card"><div class="obj-num">02</div><p>Introduce practical AI applications for classroom teaching and learning across all subjects.</p></div>
+      <div class="obj-card"><div class="obj-num">03</div><p>Demonstrate AI tools and strategies across different academic subjects through live classroom demonstrations.</p></div>
+      <div class="obj-card"><div class="obj-num">04</div><p>Improve awareness of school policies and professional responsibilities including health and safety.</p></div>
+      <div class="obj-card"><div class="obj-num">05</div><p>Strengthen professional etiquette and communication skills in the workplace for all educators.</p></div>
     </div>
   </div>
 </section>
@@ -361,9 +414,9 @@ footer p{font-size:14px;color:rgba(255,255,255,0.3);}
     <h2 class="sec-title">Workshop Agenda</h2>
 
     <div class="day-tabs">
-      <button class="day-tab active" onclick="showDay('day1',this)">Day 1 &nbsp;·&nbsp; 21 May</button>
-      <button class="day-tab" onclick="showDay('day2',this)">Day 2 &nbsp;·&nbsp; 22 May</button>
-      <button class="day-tab" onclick="showDay('day3',this)">Day 3 &nbsp;·&nbsp; 23 May</button>
+      <button class="day-tab active" onclick="showDay('day1',this)">Day 1 &nbsp;·&nbsp; 21 May (Thu)</button>
+      <button class="day-tab" onclick="showDay('day2',this)">Day 2 &nbsp;·&nbsp; 22 May (Fri)</button>
+      <button class="day-tab" onclick="showDay('day3',this)">Day 3 &nbsp;·&nbsp; 23 May (Sat)</button>
     </div>
 
     <!-- DAY 1 -->
@@ -383,10 +436,7 @@ footer p{font-size:14px;color:rgba(255,255,255,0.3);}
             <td class="session-col"><strong>Education Theory and Professional Development</strong><br/><span class="tag">Keynote</span></td>
             <td class="presenter-col"><span class="pill">Sayar U Tin Maung Win</span><br/><span style="font-size:13px;color:#aaa;">Managing Director</span></td>
           </tr>
-          <tr class="brk">
-            <td class="time-col">12:00 PM – 1:00 PM</td>
-            <td colspan="2">☕ &nbsp;Lunch Break</td>
-          </tr>
+          <tr class="brk"><td class="time-col">12:00 PM – 1:00 PM</td><td colspan="2">☕&nbsp; Lunch Break</td></tr>
           <tr>
             <td class="time-col">1:00 PM – 1:45 PM</td>
             <td class="session-col"><strong>Introduction to AI</strong><br/><span class="tag">AI Track</span></td>
@@ -402,10 +452,7 @@ footer p{font-size:14px;color:rgba(255,255,255,0.3);}
             <td class="session-col">Demonstration: AI in the Classroom — <strong>Physics</strong></td>
             <td class="presenter-col"><span class="pill">Dr. Aye Theingi Khaing</span></td>
           </tr>
-          <tr class="brk">
-            <td class="time-col">2:35 PM – 2:50 PM</td>
-            <td colspan="2">☕ &nbsp;Tea Break</td>
-          </tr>
+          <tr class="brk"><td class="time-col">2:35 PM – 2:50 PM</td><td colspan="2">☕&nbsp; Tea Break</td></tr>
           <tr>
             <td class="time-col">2:50 PM – 3:20 PM</td>
             <td class="session-col">Demonstration: AI in the Classroom — <strong>Biology</strong></td>
@@ -426,51 +473,52 @@ footer p{font-size:14px;color:rgba(255,255,255,0.3);}
         <div class="day-num">02</div>
         <div class="day-info">
           <h3>Friday, 22 May 2026</h3>
-          <p>AI in the Classroom — Mathematics · English · History · Geography · Myanmarsar &amp; AI Tools</p>
+          <p>AI in the Classroom — Mathematics · English · History · Geography · Myanmarsar · Professional Etiquette · AI Tools</p>
         </div>
       </div>
       <table class="ag-table">
         <thead><tr><th>Time</th><th>Session</th><th>Presenter(s)</th></tr></thead>
         <tbody>
           <tr>
-            <td class="time-col">8:00 AM – 9:00 AM</td>
+            <td class="time-col">8:00 AM – 8:45 AM</td>
             <td class="session-col">Demonstration: AI in the Classroom — <strong>Mathematics</strong></td>
             <td class="presenter-col"><span class="pill">Tr. Daw Thidar Khin</span><span class="pill">U Lwin Myat Ko</span><span class="pill">Mathematics Coordinators</span></td>
           </tr>
           <tr>
-            <td class="time-col">9:00 AM – 10:00 AM</td>
+            <td class="time-col">8:45 AM – 9:30 AM</td>
             <td class="session-col">Demonstration: AI in the Classroom — <strong>English</strong></td>
             <td class="presenter-col"><span class="pill">Tr. U Khin Maung Zaw</span><span class="pill">U Than Htoot Oo</span><span class="pill">English Coordinators</span></td>
           </tr>
-          <tr class="brk">
-            <td class="time-col">10:00 AM – 10:30 AM</td>
-            <td colspan="2">☕ &nbsp;Break</td>
-          </tr>
           <tr>
-            <td class="time-col">10:30 AM – 11:30 AM</td>
+            <td class="time-col">9:30 AM – 10:00 AM</td>
+            <td class="session-col"><strong>Health Insurance</strong></td>
+            <td class="presenter-col"><span class="pill">U Thudepar Lwin</span><span class="pill">U Myo Min Win</span></td>
+          </tr>
+          <tr class="brk"><td class="time-col">10:00 AM – 10:30 AM</td><td colspan="2">☕&nbsp; Break</td></tr>
+          <tr>
+            <td class="time-col">10:30 AM – 11:15 AM</td>
             <td class="session-col">Demonstration: AI in the Classroom — <strong>History</strong></td>
             <td class="presenter-col"><span class="pill">Tr. Daw Khin Aye Mi</span><span class="pill">U Phyo Pyae Sone</span><span class="pill">History Coordinators</span></td>
           </tr>
           <tr>
-            <td class="time-col">11:30 AM – 12:30 PM</td>
+            <td class="time-col">11:15 AM – 12:00 PM</td>
             <td class="session-col">Demonstration: AI in the Classroom — <strong>Geography</strong></td>
             <td class="presenter-col"><span class="pill">Tr. U Tin Maung Nyunt</span><span class="pill">U Phyo Pyae Sone</span><span class="pill">Geography Coordinators</span></td>
           </tr>
-          <tr class="brk">
-            <td class="time-col">12:30 PM – 1:30 PM</td>
-            <td colspan="2">☕ &nbsp;Lunch Break</td>
+          <tr class="brk"><td class="time-col">12:00 PM – 1:00 PM</td><td colspan="2">☕&nbsp; Lunch Break</td></tr>
+          <tr>
+            <td class="time-col">1:00 PM – 2:00 PM</td>
+            <td class="session-col"><strong>Professional Etiquette</strong><br/><span class="tag policy">Policy Track</span></td>
+            <td class="presenter-col"><span class="pill">Tr. Htay Htay Lwin</span><span class="pill">Tr. Thin Nwe Oo</span><span class="pill">Tr. Aye Theingi Khaing</span><span class="pill">Tr. Sanda Aye</span><span class="pill">Tr. Khin Myat Wut Yee</span><span class="pill">Daw Mya Mya Thein</span></td>
           </tr>
           <tr>
-            <td class="time-col">1:30 PM – 2:30 PM</td>
+            <td class="time-col">2:00 PM – 2:45 PM</td>
             <td class="session-col">Demonstration: AI in the Classroom — <strong>Myanmarsar</strong></td>
             <td class="presenter-col"><span class="pill">Department Head</span><span class="pill">U Thudepar Lwin</span><span class="pill">Myanmarsar Coordinators</span></td>
           </tr>
-          <tr class="brk">
-            <td class="time-col">2:30 PM – 3:00 PM</td>
-            <td colspan="2">☕ &nbsp;Tea Break</td>
-          </tr>
+          <tr class="brk"><td class="time-col">2:45 PM – 3:15 PM</td><td colspan="2">☕&nbsp; Tea Break</td></tr>
           <tr class="keynote">
-            <td class="time-col">3:00 PM – 4:00 PM</td>
+            <td class="time-col">3:15 PM – 4:00 PM</td>
             <td class="session-col"><strong>Understanding AI &amp; Using AI Tools</strong><br/><span class="tag">AI Track</span></td>
             <td class="presenter-col"><span class="pill">U Myo Min Thu</span></td>
           </tr>
@@ -484,7 +532,7 @@ footer p{font-size:14px;color:rgba(255,255,255,0.3);}
         <div class="day-num">03</div>
         <div class="day-info">
           <h3>Saturday, 23 May 2026</h3>
-          <p>School Policy Awareness · Health &amp; Safety · Professional Etiquette for Educators</p>
+          <p>School Policy Awareness · Closing Session</p>
         </div>
       </div>
       <table class="ag-table">
@@ -495,22 +543,15 @@ footer p{font-size:14px;color:rgba(255,255,255,0.3);}
             <td class="session-col"><strong>School Policy Awareness</strong><br/><span class="tag policy">Policy Track</span></td>
             <td class="presenter-col"><span class="pill">School Management Team</span></td>
           </tr>
-          <tr class="brk">
-            <td class="time-col">12:00 PM – 1:00 PM</td>
-            <td colspan="2">☕ &nbsp;Lunch Break</td>
-          </tr>
-          <tr>
-            <td class="time-col">1:00 PM – 2:30 PM</td>
-            <td class="session-col">Health Insurance · Anti-Cyberbully &amp; Anti-Bully Policy · <strong>Professional Etiquette for Educators</strong></td>
+          <tr class="brk"><td class="time-col">12:00 PM – 1:00 PM</td><td colspan="2">☕&nbsp; Lunch Break</td></tr>
+          <tr class="keynote">
+            <td class="time-col">1:00 PM – 3:00 PM</td>
+            <td class="session-col"><strong>School Policy Awareness (Continued)</strong><br/><span class="tag policy">Policy Track</span></td>
             <td class="presenter-col"><span class="pill">School Management Team</span></td>
-          </tr>
-          <tr class="brk">
-            <td class="time-col">2:30 PM – 3:00 PM</td>
-            <td colspan="2">☕ &nbsp;Tea Break</td>
           </tr>
           <tr>
             <td class="time-col">3:00 PM – 4:00 PM</td>
-            <td class="session-col">Health Insurance · Anti-Cyberbully · <strong>Professional Etiquette for Educators</strong></td>
+            <td class="session-col"><strong>Internalization and Closing Tea Session</strong> 🎉</td>
             <td class="presenter-col"><span class="pill">School Management Team</span></td>
           </tr>
         </tbody>
@@ -520,7 +561,66 @@ footer p{font-size:14px;color:rgba(255,255,255,0.3);}
   </div>
 </section>
 
-<!-- CERT -->
+<!-- POLICY SECTION -->
+<section class="sec policy-sec" id="policy">
+  <div class="sec-inner">
+    <div class="sec-eyebrow">Day 3 Breakdown</div>
+    <h2 class="sec-title">Policy Presentation by BOE Members</h2>
+    <div class="policy-note">
+      <strong>⏱ Format:</strong> Each policy session discussion will take <strong>15 minutes</strong>.
+    </div>
+    <ul class="policy-list">
+      <li><span class="pol-num">Policy 01</span>School Administration (100)<span class="pol-presenter">Presenter: Saya U Lay Maung</span></li>
+      <li><span class="pol-num">Policy 02</span>Admission, Attendance and Records (200 to 210)<span class="pol-presenter">Presenter: Ma Mya</span></li>
+      <li><span class="pol-num">Policy 03</span>Admission, Attendance and Records (220 to 300.15)<span class="pol-presenter">Presenter: Teacher Htay</span></li>
+      <li><span class="pol-num">Policy 04</span>Support Services (400 to 430.4)<span class="pol-presenter">Presenter: Saya U Thein Lwin</span></li>
+      <li><span class="pol-num">Policy 05</span>Students (500 to 540.1)<span class="pol-presenter">Presenter: Teacher Htay</span></li>
+      <li><span class="pol-num">Policy 06</span>Personnel (600 to 610.13)<span class="pol-presenter">Saya U Lay Maung · Saya U Thein Lwin · Saya Doctor Kyaw Min · Ma Nyunt</span></li>
+      <li><span class="pol-num">Policy 07</span>Leaves (620 to 620.7)<span class="pol-presenter">Presenter: Teacher Htay</span></li>
+      <li><span class="pol-num">Policy 08</span>Educational Staff (630 to 630.7)<span class="pol-presenter">Teacher Sanda Aye · Teacher Daw Khin Myat Wyutte</span></li>
+      <li><span class="pol-num">Policy 09</span>Governing Board Policy Manual<span class="pol-presenter">Presenter: Saya U Lay Maung</span></li>
+      <li><span class="pol-num">Policy 10</span>School Wide Action Plan<span class="pol-presenter">Presenter: Teacher Htay</span></li>
+      <li><span class="pol-num">Policy 11</span>Employee Handbook (700.4)<span class="pol-presenter">Presenter: Saya U Lay Maung</span></li>
+      <li><span class="pol-num">Policy 12</span>Health, Safety, Emergency Policies and Procedures<span class="pol-presenter">Presenter: Doctor Kyaw Min</span></li>
+      <li><span class="pol-num">Policy 13</span>Child Protection Policy incl. Cyber Bullying &amp; Anti Bullying<span class="pol-presenter">Presenter: Saya U Thein Lwin</span></li>
+      <li><span class="pol-num">Policy 14</span>Health Insurance<span class="pol-presenter">U Thudepar Lwin · U Myo Min Win</span></li>
+      <li><span class="pol-num">Policy 15</span>Professional Etiquette for Educators<span class="pol-presenter">Presenter: TBC</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- WORKSHOP FORMAT -->
+<section class="sec format-sec" id="format">
+  <div class="sec-inner">
+    <div class="sec-eyebrow">How It Works</div>
+    <h2 class="sec-title">Workshop Format &amp; Procedures</h2>
+    <div class="format-grid">
+      <div class="format-card">
+        <h4>📋 Workshop Format</h4>
+        <ol>
+          <li><span class="li-num">1</span>25 participants per classroom</li>
+          <li><span class="li-num">2</span>Each classroom has a leader to moderate with the main speaker</li>
+          <li><span class="li-num">3</span>5 groups per classroom</li>
+          <li><span class="li-num">4</span>One group consists of 5 participants</li>
+          <li><span class="li-num">5</span>Each group has a group leader on a rotating basis</li>
+          <li><span class="li-num">6</span>Each class / subject teacher must have a laptop</li>
+          <li><span class="li-num">7</span>Assistant teachers may use a mobile device</li>
+        </ol>
+      </div>
+      <div class="format-card">
+        <h4>🎯 Presentation Procedures</h4>
+        <ol>
+          <li><span class="li-num">1</span>An assignment will be divided into five parts</li>
+          <li><span class="li-num">2</span>Each participant reads and understands their part of the assignment within the allotted time (approximately <strong style="color:var(--accent2);">8 minutes</strong>)</li>
+          <li><span class="li-num">3</span>Total allotted time per assignment: <strong style="color:var(--accent2);">16 minutes</strong> — 8 min reading &amp; understanding + 8 min sharing content within the group or across the five groups in the classroom</li>
+          <li><span class="li-num">4</span>The presentation should be short and to the point, covering all titles. Details of content need not be spelled out.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATE -->
 <section class="cert-sec" id="certificate">
   <div class="cert-inner">
     <div class="cert-icon-wrap">
@@ -544,15 +644,15 @@ footer p{font-size:14px;color:rgba(255,255,255,0.3);}
 </footer>
 
 <script>
-function showDay(id,btn){
-  document.querySelectorAll('.day-panel').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.day-tab').forEach(t=>t.classList.remove('active'));
+function showDay(id, btn) {
+  document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   btn.classList.add('active');
 }
-document.querySelectorAll('.nav-links a').forEach(a=>{
-  a.addEventListener('click',function(e){
-    document.querySelectorAll('.nav-links a').forEach(x=>x.classList.remove('active'));
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', function() {
+    document.querySelectorAll('.nav-links a').forEach(x => x.classList.remove('active'));
     this.classList.add('active');
   });
 });
